@@ -23,8 +23,20 @@ class App extends React.Component {
 
   render() {
     return(
-      <div>
-        <img src={this.props.data[this.state.viewableHiringPartner]} />
+      <div className="text-center">
+        <div className="row">
+          <div className="small-12 small-centered medium-6 medium-centered columns">
+            <h1>Hiring Partners</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="small-12 small-centered medium-6 medium-centered columns">
+            <p>We work with the very best. We are proud of our partners, who work with us to deliver the best training.</p>
+            <div className="carousel">
+              <img src={this.props.data[this.state.viewableHiringPartner]} />
+            </div>
+          </div>
+          </div>
       </div>
     )
   }
